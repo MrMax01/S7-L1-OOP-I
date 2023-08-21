@@ -25,6 +25,9 @@ class Pet {
     this.species = species;
     this.breed = breed;
   }
+  static hasSameOwner(x, y) {
+    return x.petOwner === y.petOwner;
+  }
 }
 
 const pets = [];
